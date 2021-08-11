@@ -140,6 +140,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .searchTerm {
@@ -154,14 +155,14 @@ body {
 }
 
 .searchTerm:focus {
-  color: #00b4cc;
+  color: #c03c52;
 }
 
 .searchButton {
-  width: 80px;
+  width: 75px;
   height: 32px;
   border: none;
-  background: #048b9c;
+  background: #3f0897;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -169,24 +170,24 @@ body {
   font-size: 20px;
   outline: none;
   font-size: 16px;
+  margin-bottom:15px;
 }
 
 .searchButton:hover {
-  background-color: #17b8ce;
+  background-color: #66ac5d;
 }
 
 .wrap {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: auto;
+  margin-bottom: 17px;
 }
 
 @media (max-width: 900px)
     {
-        .wrap{
-            
+        .wrap{        
             height: 7px;
             margin-right: 10px;
             float: none;
@@ -195,24 +196,36 @@ body {
             }
 
             .widget {
-              display: flex;
-             
+              width:470px;
+              height: 200px;
+              display: flex;           
               flex-wrap: wrap;
               cursor: pointer;
               border-radius: 90px;
               box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
                 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+            }           
+            .widget .date {
+              flex: 0 0 30%;
+              height: 40%;
+              background: #70c1b3;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              color: white;
+              font-size: 18px;
+              font-weight: 200;
+              text-align: center;
             }
-
+            .widget .weatherIcon{
+                font-size: 45px;
+            }
             .search 
             { 
               width: 400px;
               height: 20px;
               justify-content: center;
               text-align: ccenter;
-              left: 1px;
-             
-            }
-
-       
+              left: 1px;            
+            }      
     }
